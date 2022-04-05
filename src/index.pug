@@ -1,0 +1,91 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	//-
+
+block content
+	include pug/components/header
+	
+	.main
+		.top
+			.container 
+				.title
+					h1 Are you looking for Freelancers?
+				.title_subtext Hire Great Freelancers, Fast. Spacelance helps you hire elite freelancers at a moment's notice
+				.main_search 
+					form(id="mainForm" method="get" onsubmit="alert('Успешно отправлено!');return false")
+						a(href="#").btn_hire Hire a freelancer
+						input.main_input(required type="text" placeholder="search freelancer work")
+						button(form="mainForm" type="submit").btn_search 
+		.top_banner 
+			.banner_inner
+				.banner_el 
+					.banner_img
+						img(src="images/lock.png", alt="") 
+					.banner_title Create Account
+					.banner_text First you have to create a account  here
+				.banner_el 
+					.banner_img
+						img(src="images/searchpic.png", alt="")
+					.banner_title Search work 
+					.banner_text Search the best freelance work here
+				.banner_el 
+					.banner_img
+						img(src="images/lock.png", alt="")  
+					.banner_title Save and apply
+					.banner_text Apply or save and start your work
+		.find_block 
+				.find_inner
+					.find_image
+					.find_content
+						.find_title Find The Best #[span Freelancers] Here 
+						.find_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus eget convallis. Feugiat imperdiet posuere justo, ultrices interdum sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra dui, sit accumsan, tincidunt massa. Dui cras magnis.
+		.lastwork
+				.lastwork_toptext The latest freelance work!
+				.lastwork_title Recently Posted #[span Works] 
+				.lastwork_elements
+					.lastwork_el
+						.el_top
+							.el_img 
+								img(src="images/workspic1.png", alt="")
+							.el_title Logo Design
+							.el_text Need a professional logo with writing underneath for our jewellery company
+						.el_low
+							.el_bid Highest bid $500
+							a.el_apply(href="#") Apply now
+					.lastwork_el
+						.el_top
+							.el_img 
+								img(src="images/workspic2.png", alt="")
+							.el_title Graphic Design
+							.el_text We need a graphic designer with UI/UX skills for our Furniture company
+						.el_low
+							.el_bid Highest bid $500
+							a.el_apply(href="#") Apply now
+					.lastwork_el
+						.el_top
+							.el_img 
+								img(src="images/workspic3.png", alt="")
+							.el_title Need a SEO
+							.el_text Need a SEO for our company who will let our company to a higher level
+						.el_low
+							.el_bid Highest bid $500
+							a.el_apply(href="#") Apply now
+					.lastwork_el
+						.el_top
+							.el_img 
+								img(src="images/workspic2.png", alt="")
+							.el_title Graphic Design
+							.el_text We need a graphic designer with UI/UX skills for our Furniture company
+						.el_low
+							.el_bid Highest bid $500
+							a.el_apply(href="#") Apply now
+		
+			
+					
+	include pug/components/footer
+	script(src="https://code.jquery.com/jquery-3.6.0.js")
+	script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")  
