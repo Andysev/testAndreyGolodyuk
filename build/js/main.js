@@ -3,7 +3,24 @@ var __webpack_exports__ = {};
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
+var preloaderEl = document.getElementById('preloader');
+document.addEventListener("DOMContentLoaded", function () {
+  console.log('ДОМ загружен');
+});
+
+window.onload = function () {
+  console.log('Страница загружена');
+
+  function delay() {
+    preloaderEl.classList.remove('visible');
+    preloaderEl.classList.add('hidden');
+  }
+
+  setTimeout(delay, 2000);
+};
 /* eslint-disable no-console */
+
+
 console.log('Hello from Andrey Golodyuk'); //очистка формы при перезагрузке
 
 document.getElementById('mainForm').reset(); //slider

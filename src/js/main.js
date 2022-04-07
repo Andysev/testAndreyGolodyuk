@@ -1,4 +1,20 @@
-/* eslint-disable no-console */
+  let preloaderEl = document.getElementById('preloader');
+  document.addEventListener("DOMContentLoaded", () => {
+
+    console.log('ДОМ загружен');
+
+  });
+  
+  window.onload = function() {
+	console.log('Страница загружена');
+	function delay() {
+		preloaderEl.classList.remove('visible');
+		preloaderEl.classList.add('hidden');
+	  }
+	  setTimeout(delay, 2000);
+  };
+
+  /* eslint-disable no-console */
 console.log('Hello from Andrey Golodyuk');
 
 //очистка формы при перезагрузке
