@@ -9250,7 +9250,8 @@ html {
   overflow-y: scroll; }
 
 .body {
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+  overflow-x: hidden; }
 
 .header_menu {
   display: -webkit-box;
@@ -9982,7 +9983,7 @@ h1, .h1 {
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    width: unset; } }
+    width: 820px; } }
 
 @media (max-width: 1220px) {
   .header_item {
@@ -10073,6 +10074,8 @@ h1, .h1 {
   .top_banner {
     width: 780px;
     height: 285px; }
+  .banner_inner {
+    width: unset; }
   .banner_img {
     width: 80px;
     height: 80px; }
@@ -10387,9 +10390,13 @@ h1, .h1 {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-top: 5px;
+    padding-top: 0; }
+  .banner_el {
+    margin-top: 25px; }
   .top_banner {
-    height: 625px;
+    height: 690px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -10397,7 +10404,8 @@ h1, .h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: unset; } }
+    width: unset;
+    bottom: 0; } }
 
 @media (max-width: 690px) {
   .footer {
